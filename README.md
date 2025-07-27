@@ -1,6 +1,3 @@
-Certainly! Here's the **README.md** content in proper **Markdown format**, without interactive copy/edit tags. You can copy-paste this directly into a `README.md` file for your GitHub repository:
-
-```markdown
 # generate-hosts-file
 
 This project provides a Bash script (`generate-hosts-file.sh`) that generates a local hosts file with meaningful hostnames for all devices on a LAN. It is designed to complement **Tailscale in subnet routing mode**, by enabling local DNS resolution for devices that are *not* part of the Tailscale mesh but are reachable through a Tailscale subnet router.
@@ -114,15 +111,3 @@ MIT License
 ## Contributions
 
 Pull requests, bug reports, and improvements to logic, compatibility, and documentation are always appreciated.
-
-```
-
-Let me know if you'd also like:
-
-- A `LICENSE` file (MIT)
-- A `.gitignore`
-- A GitHub Actions workflow
-- A sample `crontab` snippet
-
-Or if you want to convert this into a web-friendly version for GitHub Pages.
-```
