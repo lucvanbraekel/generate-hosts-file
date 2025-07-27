@@ -26,6 +26,15 @@ The result is a file called `/etc/hosts.generated` containing entries like:
 
 These names can then be used for DNS resolution from other Tailscale nodes, if `dnsmasq` is configured to load this file.
 
+
+## Why Hostnames Matter in Routed Subnets
+
+When using Tailscale with subnet routing, devices on remote LANs are typically accessible via their **local IP addresses**. However, if **multiple routed subnets use overlapping IP ranges** (e.g., multiple sites with a `192.168.1.0/24` network), then direct IP-based access becomes ambiguous or fails altogether.
+
+In such cases, this script becomes essential:
+It assigns a **unique hostname to each device**, allowing you to reliably access them via name—regardless of subnet overlap—provided each subnet’s DNS server is correctly set up and advertised via Tailscale.
+
+
 ## Prerequisites
 
 This script requires the following packages:
